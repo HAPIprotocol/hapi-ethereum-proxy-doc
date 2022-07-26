@@ -106,8 +106,7 @@ Command:
 web3 --rpc-url $RPC_URL contract call --address $CONTRACT_ADDRESS --abi HapiProxy.abi --function getAddress $TARGET_ADDRESS
 ```
 
-`$RPC_URL` is a link to an RPC node to connect to. `$CONTRACT_ADDRESS` is an address from the contract address table above (depends on the network). `$TARGET_ADDRESS` is an address to get risk data for (example: `0x9e8B0eFD2194cF08AA8424d6B55B64a585914bAa`).
-
+`$RPC_URL` is a link to an RPC node to connect to. `$CONTRACT_ADDRESS` is an address from the contract address table above (depends on the network). `$TARGET_ADDRESS` is an address to get risk data for (example: `0xa0c7BD318D69424603CBf91e9969870F21B8ab4c` for Ethereum or `0x9e8B0eFD2194cF08AA8424d6B55B64a585914bAa` for OKC).
 
 Example output:
 ```
