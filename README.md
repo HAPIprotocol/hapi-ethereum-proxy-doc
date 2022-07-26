@@ -1,16 +1,20 @@
 # HAPI Ethereum Proxy documentation
 
-This repository contains currently deployed Solidity source code and ABI for HAPI Ethereum Proxy smart contract.
+This repository contains currently deployed Solidity source code and ABI for HAPI Ethereum Proxy smart contract. This contract contains address security data of [HAPI Protocol](https://hapi.one/) specific for a particular Ethereum-compatible network.
+
+Our main data vault is in the [hapi-core](https://github.com/HAPIprotocol/hapi-core) smart contract on Solana blockchain and is being replicated to all supported networks.
+
+You can browse the data vault contents on [HAPI Explorer](https://explorer.hapi.one/).
 
 # Networks
 
-We support various Ethereum-based networks
+We support various Ethereum-compatible networks:
 
 | Network | Contract Address |
 |---------|------------------|
-| Ethereum Mainnet | 0x730c549587b3d6068F78DcED2C0d18Ae6c731B02 |
-| OKC Mainnet | 0x82edC3E28B5bF80b42900464dDbf5316Eed49258 |
-| OKC Testnet | 0x82edC3E28B5bF80b42900464dDbf5316Eed49258 |
+| Ethereum Mainnet | [0x730c549587b3d6068F78DcED2C0d18Ae6c731B02](https://etherscan.io/address/0x730c549587b3d6068F78DcED2C0d18Ae6c731B02) |
+| OKC Mainnet | [0x82edC3E28B5bF80b42900464dDbf5316Eed49258](https://www.oklink.com/en/okc/address/0x82edC3E28B5bF80b42900464dDbf5316Eed49258) |
+| OKC Testnet | [0x82edC3E28B5bF80b42900464dDbf5316Eed49258](https://www.oklink.com/en/okc-test/address/0x82edC3E28B5bF80b42900464dDbf5316Eed49258) |
 
 # Methods
 
