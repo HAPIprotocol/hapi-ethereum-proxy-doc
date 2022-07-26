@@ -1,0 +1,340 @@
+[
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "address_",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum HapiProxy.Category",
+                "name": "category_",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "risk_",
+                "type": "uint8"
+            }
+        ],
+        "name": "CreateAddress",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "reporterAddress_",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "permissionLevel_",
+                "type": "uint8"
+            }
+        ],
+        "name": "CreateReporter",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "version",
+                "type": "uint8"
+            }
+        ],
+        "name": "Initialized",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "address_",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "enum HapiProxy.Category",
+                "name": "category_",
+                "type": "uint8"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "risk_",
+                "type": "uint8"
+            }
+        ],
+        "name": "UpdateAddress",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "address",
+                "name": "reporterAddress_",
+                "type": "address"
+            },
+            {
+                "indexed": false,
+                "internalType": "uint8",
+                "name": "permissionLevel_",
+                "type": "uint8"
+            }
+        ],
+        "name": "UpdateReporter",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "address_",
+                "type": "address"
+            },
+            {
+                "internalType": "enum HapiProxy.Category",
+                "name": "category_",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint8",
+                "name": "risk_",
+                "type": "uint8"
+            }
+        ],
+        "name": "createAddress",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address[]",
+                "name": "addresses_",
+                "type": "address[]"
+            },
+            {
+                "internalType": "enum HapiProxy.Category",
+                "name": "category_",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint8",
+                "name": "risk_",
+                "type": "uint8"
+            }
+        ],
+        "name": "createAddresses",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "reporterAddress_",
+                "type": "address"
+            },
+            {
+                "internalType": "uint8",
+                "name": "permissionLevel_",
+                "type": "uint8"
+            }
+        ],
+        "name": "createReporter",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "address_",
+                "type": "address"
+            }
+        ],
+        "name": "getAddress",
+        "outputs": [
+            {
+                "internalType": "enum HapiProxy.Category",
+                "name": "category",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint8",
+                "name": "risk",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "reporterAddress_",
+                "type": "address"
+            }
+        ],
+        "name": "getReporter",
+        "outputs": [
+            {
+                "internalType": "uint8",
+                "name": "permissionLevel",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "initialize",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "address_",
+                "type": "address"
+            },
+            {
+                "internalType": "enum HapiProxy.Category",
+                "name": "category_",
+                "type": "uint8"
+            },
+            {
+                "internalType": "uint8",
+                "name": "risk_",
+                "type": "uint8"
+            }
+        ],
+        "name": "updateAddress",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "reporterAddress_",
+                "type": "address"
+            },
+            {
+                "internalType": "uint8",
+                "name": "permissionLevel_",
+                "type": "uint8"
+            }
+        ],
+        "name": "updateReporter",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]
