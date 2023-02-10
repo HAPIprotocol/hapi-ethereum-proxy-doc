@@ -16,6 +16,7 @@ We support various Ethereum-compatible networks:
 | OKC Mainnet | [0x82edC3E28B5bF80b42900464dDbf5316Eed49258](https://www.oklink.com/en/okc/address/0x82edC3E28B5bF80b42900464dDbf5316Eed49258) |
 | OKC Testnet | [0x82edC3E28B5bF80b42900464dDbf5316Eed49258](https://www.oklink.com/en/okc-test/address/0x82edC3E28B5bF80b42900464dDbf5316Eed49258) |
 | BSC Mainnet | [0x82edC3E28B5bF80b42900464dDbf5316Eed49258](https://bscscan.com/address/0x82edC3E28B5bF80b42900464dDbf5316Eed49258) |
+| BSC Testnet | [0x82edC3E28B5bF80b42900464dDbf5316Eed49258](https://testnet.bscscan.com/address/0x82edC3E28B5bF80b42900464dDbf5316Eed49258) |
 
 # Methods
 
